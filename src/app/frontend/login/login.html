@@ -34,10 +34,6 @@ limitations under the License.
         <kd-basic-login ng-if="$ctrl.isAuthenticationModeEnabled($ctrl.supportedAuthenticationModes.BASIC)"
                         title="[[Basic|Basic option label shown on login page]]"
                         on-update="$ctrl.onUpdate(loginSpec)"></kd-basic-login>
-        <kd-kube-config-login title="[[Kubeconfig|Kubeconfig option label shown on login page]]"
-                              desc="[[Please select the kubeconfig file that you have created to configure access to the cluster. To find out more about how to configure and use kubeconfig file, please refer to the <a href='https://kubernetes.io/docs/tasks/access-application-cluster/configure-access-multiple-clusters/'>Configure Access to Multiple Clusters</a> section.|]]"
-      
-                              on-update="$ctrl.onUpdate(loginSpec)"></kd-kube-config-login>
       </kd-login-options>
 
       <md-button class="md-raised md-primary"
