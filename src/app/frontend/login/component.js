@@ -148,13 +148,6 @@ class LoginController {
           });
     }
   }
-
-  /** @export */
-  skip() {
-    this.kdAuthService_.skipLoginPage(true);
-    this.kdNavService_.setVisibility(true);
-    this.state_.transitionTo(overviewState);
-  }
 }
 
 /** @type {!angular.Component} */
